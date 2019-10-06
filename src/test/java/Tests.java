@@ -22,12 +22,12 @@ public class Tests {
         $("input[class=\"gLFyf gsfi\"]").pressEnter();
         List<SelenideElement> searchResults=$$(".rc");
 
-        for (SelenideElement item: searchResults) {
-            if(item.has(Condition.text("https://www.open.ru "))){
-        //        System.out.println(item);
-                item.$("div[class=\"TbwUpd\"]").click();
-                break;
-            }
+            for (SelenideElement item: searchResults) {
+                if(item.has(Condition.text("https://www.open.ru "))){
+                    //        System.out.println(item);
+                    item.$("div[class=\"TbwUpd\"]").click();
+                    break;
+                }
         }
 
         //table[class="main-page-exchange__table main-page-exchange__table--online"]
