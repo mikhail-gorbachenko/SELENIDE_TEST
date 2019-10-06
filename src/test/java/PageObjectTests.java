@@ -15,6 +15,7 @@ public class PageObjectTests {
 
     @BeforeMethod
     public void start() {
+        Configuration.browser = "chrome";
         Configuration.startMaximized = true;
     }
 
