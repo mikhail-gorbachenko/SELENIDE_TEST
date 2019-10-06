@@ -15,7 +15,7 @@ public class GoogleSearchPage{
     //но в обучалке селенида сказали что лучше скрывать.
     //https://github.com/mikhail-gorbachenko/SE_MENT/blob/master/src/test/java/com/epam/se_ment/YandexMailTests.java
     public void assertThatSiteExistsInResults(String url){
-        List<SelenideElement> searchResults=$$(".rc");
+        List<SelenideElement> searchResults=$$("div[class=\"rc\"]");
         boolean found = false;
         for (SelenideElement item: searchResults) {
             if(item.has(Condition.text(url))){
